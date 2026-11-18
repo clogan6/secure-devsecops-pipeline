@@ -30,6 +30,3 @@ def test_wrong_http_method():
 
     # Verify Flask rejects the request
     assert response.status_code == 405
-
-def test_intentional_failure():
-    assert 1 == 2
