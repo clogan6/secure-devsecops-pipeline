@@ -1,3 +1,4 @@
 -r requirements.txt
 pytest
 pip-audit
+bandit

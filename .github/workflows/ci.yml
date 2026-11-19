@@ -32,3 +32,7 @@ jobs:
       
       - name: Pip Audit
         run: pip-audit -r requirements-dev.txt
+
+      - name: Bandit SAST Check
+        run: |
+          bandit -r app/ --severity-level medium
